@@ -8,6 +8,7 @@ class TestShapes(unittest.TestCase):
         circle = ShapeFactory.create_circle(5)
         # Вычисляем площадь круга и проверяем, что она равна ожидаемому значению
         self.assertAlmostEqual(circle.area(), 78.54, places=2)
+        self.assertAlmostEqual(circle.area(), 78.54, places=2)
 
     def test_triangle_area(self):
         # Создаем треугольник с длинами сторон 3, 4 и 5
